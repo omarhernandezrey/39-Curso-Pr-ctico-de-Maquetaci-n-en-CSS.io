@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -74,6 +76,9 @@ nav .profile-link a {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
+    background-image: url('../assets/img/business-2717063_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-main section {
@@ -85,8 +90,11 @@ nav .profile-link a {
 }
 
 .home-main-text {
+    font-family: 'Roboto mono', monospace;
     font-size: 30px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: 10px;
-    color: black;
+    color: #47cfac;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
