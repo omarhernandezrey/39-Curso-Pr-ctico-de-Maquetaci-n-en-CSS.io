@@ -38,3 +38,8 @@ header .header-icons-container .icos {
     justify-self: end;
     margin-right: 50px;
 }
+
+header .icos span {
+    color: white;
+
+}
