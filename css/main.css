@@ -19,6 +19,11 @@ a {
     right: 0;
 }
 
+.grid-container {
+   max-width:980 ;
+   margin: auto;
+}
+
 header {
     width: 100%;
     height: 140px;
