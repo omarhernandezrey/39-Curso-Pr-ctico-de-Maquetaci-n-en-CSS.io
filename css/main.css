@@ -18,11 +18,11 @@ a {
     left: 0;
     right: 0;
 }
-
 .grid-container {
-   max-width:980 ;
-   margin: auto;
+    max-width: 980px;
+    margin: auto;
 }
+
 
 header {
     width: 100%;
@@ -144,122 +144,43 @@ nav .profile-link a {
     padding: 10px 15px;
     font-size: 12px;
 }
-
-.blogs-posts-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.blogs-posts-container h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de tamaño igual */
-    gap: 30px; /* Espacio entre las tarjetas */
-}
-
-.post-container {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.post-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0; /* Esquinas redondeadas solo arriba */
-}
-
-.post-container p {
-    margin-bottom: 10px;
-}
-
-.blogs-button {
+.blogs-posts-container .post-container {
     display: inline-block;
-    background-color: #47cfac;
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
 }
-
-.site-footer {
-    background-color:  #47cfac;
-    color: #fff;
-    padding: 30px 0;
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #47cfac;
     text-align: center;
-    font-family: Arial, sans-serif;
-    border-top: 1px solid #444; /* Agrega un borde superior para separación visual */
+}
+footer p {
+    color: white;
+    margin-top: 30px;
 }
 
-.footer-content {
-    margin-bottom: 20px;
+.blogpost-img-container {
+    padding: 0 50px 40px;
 }
-
-.footer-content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+.blogpost-img-container img {
+    width: 100%;
 }
-
-.footer-content p {
-    font-size: 1rem;
-    line-height: 1.5;
+.blogpost-main-container {
+    padding: 0 50px 40px;
 }
-
-.footer-social {
-    margin-top: 15px;
+.blogpost-main-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
 }
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-links li {
-    margin: 0 10px;
-}
-
-.social-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-/* Estilos para los íconos personalizados */
-
-.flaticon-001-facebook::before {
-    content: "\f09a"; /* Código Unicode del ícono de Facebook */
-    font-family: "Font Awesome 5 Brands"; /* Familia de fuente de FontAwesome para íconos de marcas */
-}
-
-.flaticon-002-twitter::before {
-    content: "\f099"; /* Código Unicode del ícono de Twitter */
-    font-family: "Font Awesome 5 Brands"; /* Familia de fuente de FontAwesome para íconos de marcas */
-}
-
-.flaticon-011-instagram::before {
-    content: "\f16d"; /* Código Unicode del ícono de Instagram */
-    font-family: "Font Awesome 5 Brands"; /* Familia de fuente de FontAwesome para íconos de marcas */
-}
-
-.flaticon-010-linkedin::before {
-    content: "\f0e1"; /* Código Unicode del ícono de LinkedIn */
-    font-family: "Font Awesome 5 Brands"; /* Familia de fuente de FontAwesome para íconos de marcas */
-}
-
-.flaticon-008-youtube::before {
-    content: "\f167"; /* Código Unicode del ícono de YouTube */
-    font-family: "Font Awesome 5 Brands"; /* Familia de fuente de FontAwesome para íconos de marcas */
+.blogpost-main-container section h1 {
+    font-size: 35px;
 }
