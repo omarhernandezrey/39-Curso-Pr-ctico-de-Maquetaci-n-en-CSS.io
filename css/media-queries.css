@@ -1,0 +1,73 @@
+/* Ajustes generales para todas las pantallas */
+.blogs-main-new, .proyects-main-container, .profile-main-container {
+    display: grid;
+    gap: 1rem; /* Añadir espacio entre elementos */
+}
+
+/* Para pantallas menores a 900px */
+@media (max-width: 900px) {
+    .blogs-main-new {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /* Ajustar automáticamente la altura de las filas */
+    }
+    .blogs-news-img-container {
+        grid-row: 2;
+    }
+    .blogs-news-info-container {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .blogs-posts-container .post-container {
+        max-width: 100%; /* Usar el 100% del contenedor padre */
+    }
+    .proyects-main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .profile-main-container .profile-container {
+        display: block;
+    }
+}
+
+/* Para pantallas menores a 600px */
+@media (max-width: 600px) {
+    .blogs-posts-container .post-container {
+        max-width: 100%;
+    }
+    .blogs-news-img-container {
+        width: 100%;
+    }
+    .blogs-news-info-container {
+        padding: 0 1rem;
+    }
+}
+
+/* Para pantallas menores a 400px */
+@media (max-width: 400px) {
+    .blogs-main-new {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .proyects-main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .profile-main-container .profile-container {
+        padding: 1rem;
+    }
+}
+
+/* Ajustes adicionales para mejorar la responsividad en general */
+.blogs-news-img-container img {
+    width: 100%;
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.blogs-news-info-container, .profile-container {
+    padding: 1rem;
+    box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total */
+}
+
+.proyects-main-container, .profile-main-container {
+    margin: 0 auto; /* Centrar el contenedor */
+}
