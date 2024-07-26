@@ -1,24 +1,20 @@
-/* Ajustes generales para todas las pantallas */
-.blogs-main-new, .proyects-main-container, .profile-main-container {
-    display: grid;
-    gap: 1rem; /* Añadir espacio entre elementos */
-}
-
-/* Para pantallas menores a 900px */
+/* Media Queries */
 @media (max-width: 900px) {
     .blogs-main-new {
         grid-template-columns: 1fr;
-        grid-template-rows: auto; /* Ajustar automáticamente la altura de las filas */
+        grid-template-rows: auto;
     }
     .blogs-news-img-container {
         grid-row: 2;
+        width: 100%; /* Ajustar el tamaño de la imagen al 100% del contenedor */
     }
     .blogs-news-info-container {
         grid-column: 1;
         grid-row: 3;
+        padding: 0 1rem;
     }
     .blogs-posts-container .post-container {
-        max-width: 100%; /* Usar el 100% del contenedor padre */
+        max-width: 100%;
     }
     .proyects-main-container {
         grid-template-columns: 1fr;
@@ -27,9 +23,15 @@
     .profile-main-container .profile-container {
         display: block;
     }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-social {
+        margin-top: 10px;
+    }
 }
 
-/* Para pantallas menores a 600px */
 @media (max-width: 600px) {
     .blogs-posts-container .post-container {
         max-width: 100%;
@@ -42,7 +44,6 @@
     }
 }
 
-/* Para pantallas menores a 400px */
 @media (max-width: 400px) {
     .blogs-main-new {
         grid-template-columns: 1fr;
@@ -63,11 +64,60 @@
     height: auto; /* Mantener la proporción de la imagen */
 }
 
-.blogs-news-info-container, .profile-container {
+.blogs-news-info-container,
+.profile-container {
     padding: 1rem;
     box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total */
 }
 
-.proyects-main-container, .profile-main-container {
+.proyects-main-container,
+.profile-main-container {
     margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    background-color: #22272d;
+    color: white;
+    padding: 40px 20px;
+    border-top: 5px solid #47cfac;
+    box-sizing: border-box; /* Asegura que el padding y el borde no provoquen desbordamiento */
+    overflow: hidden; /* Evita cualquier desbordamiento accidental */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #47cfac;
+    text-decoration: none;
+    font-size: 1.5rem; /* Ajustar el tamaño de los íconos */
+}
+
+.footer-text {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    text-align: center; /* Centra el texto */
+    font-size: 1rem; /* Ajustar el tamaño del texto */
+    padding: 0 10px; /* Asegura que el texto no toque los bordes */
+}
+
+.footer-text p {
+    margin: 10px 0; /* Espaciado entre párrafos */
 }

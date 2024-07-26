@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+/* Estilos generales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevenir el desbordamiento horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la ventana */
+}
+
+main {
+    flex: 1; /* Permite que el main se expanda para ocupar el espacio disponible */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para el header */
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-icons-container {
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+
+.header-icons-container .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header-icons-container .icons a {
+    margin-left: 10px;
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+.nav-logo-container {
+    margin-left: 50px;
+}
+
+.nav-logo-container img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+/* Estilos para el main */
+.home-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 0; /* Eliminar el padding para que la imagen de fondo ocupe toda la sección */
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    height: 100vh; /* Ajustar la altura según sea necesario */
+}
+
+.home-main-content {
+    background-image: url('../assets/img/bacgraund1.jpg'); /* Reemplaza 'tu-imagen.jpg' con el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    height: 100%; /* Asegurar que ocupe toda la altura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Eliminar márgenes */
+}
+
+.home-main-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.home-main-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #47cfac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions for background color and transform */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.home-main-button:hover {
+    background-color: #3db39a;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+
+/* Estilos para el footer */
+footer {
+    width: 80%;
+    background-color: #22272d;
+    color: white;
+    padding: 5px; /* Reduce el padding para minimizar el espacio ocupado */
+    border-top: 1px solid #47cfac; /* Grosor reducido del borde superior */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Evitar scroll en footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px; /* Espacio reducido entre contenido del footer */
+}
+
+.footer-logo img {
+    max-width: 80px; /* Reducido el tamaño máximo del logo */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* Espacio reducido entre íconos sociales y texto */
+}
+
+.footer-social a {
+    margin: 0 5px; /* Espacio reducido entre íconos sociales */
+    color: #47cfac;
+    text-decoration: none;
+    font-size: 1rem; /* Tamaño de íconos reducido */
+}
+
+.footer-text {
+    font-size: 0.8rem; /* Tamaño del texto reducido */
+    padding: 0 5px; /* Espacio alrededor del texto reducido */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 2px 0; /* Padding reducido para el texto de derechos reservados */
+    border-top: 1px solid #3db39a; /* Borde superior reducido */
+}
